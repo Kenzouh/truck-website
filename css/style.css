@@ -1,0 +1,232 @@
+
+body{
+    margin: 0px;
+}
+
+header{
+    background: linear-gradient(to right, #040c6d, #466764);
+    font-size: 40px;
+    padding: 25px;
+    text-align: center;
+    color: lightpink;
+}
+
+header span{
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+header span:nth-child(1){
+    transition-delay: 0.15s;
+}
+
+header span:nth-child(2){
+    transition-delay: 0.9s;
+}
+
+header span:nth-child(3){
+    transition-delay: 0.3s;
+}
+
+header span:nth-child(4){
+    transition-delay: 0.05s;
+}
+
+header span:nth-child(5){
+    transition-delay: 0.6s;
+}
+
+header span:nth-child(6){
+    transition-delay: 0.75s;
+}
+
+header span:nth-child(7){
+    transition-delay: 0.45s;
+}
+
+header:hover span{
+    opacity: 1;
+}
+
+
+/*======================== Navbar ========================*/
+
+.navbar{
+    background-color: #bee6ff;
+    border: 2px solid #000000;
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+.navbar ul{
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+.navbar a{
+    color: #000000;
+    font-size: 20px;
+    text-decoration: none;
+
+    display: block;
+    padding: 20px;
+}
+
+.navbar li{
+    display: inline-block;
+}
+
+    .navbar li:hover:not(.navbarHere){
+        background-color: #add9f4;
+    }
+    .navbar li:active:not(.navbarHere){
+        background-color: #a3cde8;
+    }
+
+.navbarHere{
+    background-color: #90b7cf;
+}
+
+.dropdown{
+    display: inline-block;
+    
+}
+    .dropdown:hover .dropdownContent{
+        display: block;
+    }
+
+    .dropdown .dropdownContent{
+        display: none;
+        position: absolute;
+        background-color: #bee6ff;
+        min-width: 100px;
+        
+        box-shadow: 2px 2px 5px #000000;
+    }
+
+    .dropdownContent a:hover:not(.dropdownHere){
+        background-color: #a3c4d8;
+    }
+    .dropdownContent a:active:not(.dropdownHere){
+        background-color: #95b4c7;
+    }
+
+    .dropdownHere{
+        background-color: #738d9c;
+    }
+/*
+.navbar{
+    top: 0px;
+    position: sticky;
+}
+
+.navbar ul{
+    list-style-type: none;
+    background-color: #8d8dc7;
+    padding: 0px;
+    margin: 0px;
+    display: flex;
+    overflow: hidden;
+}
+
+.navbar a{
+    color: #ffffff;
+    text-decoration: none;
+    text-align: center;
+    display: block;
+    padding: 25px;
+}
+
+.navbar li{
+    float: left;
+}
+
+    .navbarHere{
+        background-color:#2b2b4b;
+    }
+
+    .customerCare{
+        margin-left: auto;
+        margin-right: 0px;
+    }
+
+    .navbar li:hover:not(.navbarHere){
+        background-color: #7373a8;
+    }
+
+    .navbar li:active:not(.navbarHere){
+        background-color: #414785;
+    }
+
+*/
+
+
+
+/*======================== Main ========================*/
+
+main{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+
+/*================================================ About Page ================================================*/
+
+
+#aboutMichaelImg{
+    height: 320px;
+    width: 300px;
+    
+    float: right;
+
+    margin-left: 20px;
+    border: 2px solid #000000;
+}
+
+/*======================== Aside ========================*/
+
+aside p{
+    font-size: 20px;
+    font-family: 'Lucida Sans';
+    text-indent: 30px;
+    text-align: justify;
+
+    line-height: 30px;
+
+    margin-left: 20px;
+}
+
+    aside p::first-letter{
+        font-size: 50px;
+    }
+
+
+/*================================================ Contact Page ================================================*/
+
+#contactTitle{
+    font-size: 40px;
+    font-family: 'Lucida Sans';
+    text-align: center;
+    margin-bottom: 80px;
+}
+.icons{
+    font-size: 60px;
+    text-align: center;
+}
+
+.contactLabel{
+    font-size: 40px;
+    text-decoration: underline;
+    margin-left: 20px;
+}
+
+.icons a{
+    margin-right: 50px;
+    text-decoration: none;
+}
+
+.contactSection{
+    margin-bottom: 100px;
+}

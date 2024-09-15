@@ -11,24 +11,38 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
     <link rel="icon" type="image/jpg" href="/images/Icon.jpg">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
 
     <nav class="navbar">
+        
         <ul class="navbarLeftSide">
             <li><a href="index.html">Home</a></li>
-            <li class="navbarHere"><a href="">About</a></li>
+            <li><a href="about.html" class="navbarHere">About</a></li>
             <li><a href="contact.html">Contact</a></li>
         </ul>
-
+        
         <ul class="navbarRightSide">
-            <li><a href="">Products ↓</a></li>
-            <li><a href="">FAQs ↓</a></li>
-            <li><a href="">Search</a></li>
+
+            <div class="dropdown">
+                <li class="customerCare"><a href="">Products ↓</a></li>
+                    <div class="dropdownContent">
+                        <a href="products/prod16wheeler.html">16 Wheeler</a>
+                        <a href="products/prod18wheeler.html">18 Wheeler</a>
+                        <a href="products/prod20wheeler.html">20 Wheeler</a>
+                    </div>
+            </div>
+
+            <div class="dropdown">
+                <li class="customerCare"><a href="">FAQs ↓</a></li>
+                    <div class="dropdownContent">
+                        <a href="faqs/faq1.html">How much?</a>
+                    </div>
+            </div>
+            <li class="customerCare"><a href="">Search</a></li>
         </ul>
     </nav>
-
     <main>
 
         <aside>
